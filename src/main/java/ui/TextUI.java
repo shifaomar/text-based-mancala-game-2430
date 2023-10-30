@@ -19,10 +19,15 @@ public class TextUI {
         // Initialize the Mancala game and set up players
         MancalaGame game = new MancalaGame();
         game.getBoard().setUpPits();
+        //game.getBoard().setUpStores();
         List<Pit> pits = game.getBoard().getPits();
         Player player1 = new Player();
         Player player2 = new Player();
+
         game.setPlayers(player1, player2);
+
+        player1.setName("Alice");
+        player2.setName("Alina");
 
         // Start the game loop
         while (!game.isGameOver()) {

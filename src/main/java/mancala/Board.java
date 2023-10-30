@@ -12,7 +12,7 @@ public class Board{
     public Board(){
         pits = new ArrayList<>();
         stores = new ArrayList<>();
-        this.game = game;
+        //this.game = game;
         initializeBoard();
 
         for (int i = 0; i < 12; i++) {
@@ -21,6 +21,11 @@ public class Board{
         for (int i = 0; i < 2; i++) {
             stores.add(new Store());
         }
+        
+    }
+
+    public void setGame(MancalaGame game) {
+        this.game = game;
     }
 
     public int captureStones(int stoppingPoint){           //captures stones from the opponents pits
@@ -71,12 +76,10 @@ public class Board{
         setUpPits();
         setUpStores();
     
-        for (int i = 0; i < 14; i++) {
-            if (i != 6 && i != 13) {
+        for (int i = 0; i < 12; i++) {
                 for (int j = 0; j < 4; j++) {                   //adding 4 stones to each pit
                     pits.get(i).addStone();
                 }
-            }
         }
     }
 
@@ -134,12 +137,13 @@ public class Board{
     }
 
     public void setUpPits(){                                    //establishes 12 empty pits in the board
-        for (int i = 0; i < 14; i++) {
-            pits.add(new Pit());
+        for (int i = 0; i < 12; i++) {
+                pits.add(new Pit());
         }
     }
 
     public void setUpStores(){                                  //establishes 2 empty stores in the board
+        
         stores.add(new Store());
         stores.add(new Store());
     }
