@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/Board.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/GameNotOverException.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/InvalidMoveException.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/MancalaGame.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/NoSuchPlayerException.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/Pit.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/PitNotFoundException.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/Player.java">
+<error line="13" column="26" severity="error" message="&apos;name&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="30" column="32" severity="error" message="&apos;name&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="34" column="32" severity="error" message="&apos;store&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/mancala/Store.java">
+</file>
+<file name="/course/coursework/GP2/docs/aiSolution/src/main/java/ui/TextUI.java">
+<error line="2" column="15" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - mancala.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="4" column="8" severity="error" message="Unused import - java.util.Scanner." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="38" severity="error" message="Line is longer than 120 characters (found 141)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+</checkstyle>

@@ -8,6 +8,7 @@ Mancala
 This program is a text-based version of the game mancala. 
 
 
+## Getting Started
 
 ### Dependencies
 

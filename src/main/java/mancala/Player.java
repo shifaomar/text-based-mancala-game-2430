@@ -1,32 +1,54 @@
 package mancala;
 
 public class Player{
+
+    private String theName;
+    private Store theStore;
+
+    public Player() {
+        
+        theName = "DefaultPlayer"; 
+        theStore = new Store(); 
+    }
+
+    public Player(String name){
+        this.theName = name;
+        theStore = new Store();
+    }
+
     public String getName(){                   //gets the name of the player
         
-        return "";
+        return theName;
     }
 
-    public Store getStore(){                      //gets the players store when they collect stones
-        Store store = new Store();
-        return store;
+    public Store getStore(){                   //gets the players store when they collect stones
+        return theStore;
     }
 
-    public int getStoreCount(){             //gets the count of the number of stones in the players store when they collect stones
-        return 0;
+     public int getStoreIndex() {
+        if (this.getName().equals("Player 1")) {
+            return 6;
+        } else {
+            return 14;
+        }
+    }
+
+//gets the count of the number of stones in the players store when they collect stones
+    public int getStoreCount(){             
+        return theStore.getTotalStones();
     }
 
     public void setName(String name){           //sets the players name
-        
+        this.theName = name;
     }
     
     public void setStore(Store store){          //sets the players store
-
+        this.theStore = store;
     }
 
+    @Override
     public String toString(){
-            return ("o\n");
+            return theName;
     }
-
-
 
 }

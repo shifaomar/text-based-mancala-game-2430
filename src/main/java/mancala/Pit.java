@@ -1,21 +1,28 @@
 package mancala;
 
 public class Pit{
+    private int stoneCount;
 
+    public Pit(){
+        stoneCount = 0;
+    }
     public void addStone(){                                        //adds a stone to the pit
-
+        stoneCount++;
     }
 
     public int getStoneCount(){                                    //gets the number of stones in the pit
-        return 0;
+        return stoneCount;
     }
 
     public int removeStones(){                                     //removes and returns the stones from the pit
-        return 0;
+        int stonesRemoved = stoneCount;
+        stoneCount = 0;
+        return stonesRemoved;
     }
 
     public String toString(){
-        return("o\n");
+        return String.valueOf(stoneCount);
+        
     }
 
 }
