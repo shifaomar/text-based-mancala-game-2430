@@ -24,8 +24,8 @@ public class Board{
         
     }
 
-    public void setGame(MancalaGame game) {
-        this.game = game;
+    public void setGame(MancalaGame thisGame) {
+        this.game = thisGame;
     }
 
     public int captureStones(int stoppingPoint){           //captures stones from the opponents pits
