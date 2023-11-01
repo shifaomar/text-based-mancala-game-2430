@@ -1,6 +1,6 @@
 package ui;
 import mancala.MancalaGame;
-//import mancala.Board;
+import mancala.Board;
 import mancala.Player;
 //import mancala.Store;
 import mancala.Pit;
@@ -18,8 +18,12 @@ public class TextUI {
 
         // Initialize the Mancala game and set up players
         MancalaGame game = new MancalaGame();
-        game.getBoard().setUpPits();
+        //game.getBoard().setUpPits();
         //game.getBoard().setUpStores();
+        Board board = new Board();
+        game.setBoard(board);
+        game.getBoard().setUpPits();
+
         List<Pit> pits = game.getBoard().getPits();
         Player player1 = new Player();
         Player player2 = new Player();

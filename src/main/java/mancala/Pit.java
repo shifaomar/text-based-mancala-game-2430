@@ -6,6 +6,7 @@ public class Pit{
     public Pit(){
         stoneCount = 0;
     }
+    
     public void addStone(){                                        //adds a stone to the pit
         stoneCount++;
     }

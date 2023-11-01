@@ -56,24 +56,6 @@ public class MancalaGame{
     }
 
 
-    public boolean isValidMove(int startPit, Player player) {
-        if (isGameOver()) {
-            return false; // Game is already over
-        }
-
-        // Check if the selected pit belongs to the current player
-        if (player != getCurrentPlayer()) {
-            return false; // It's not the player's turn
-        }
-
-        // Check if the selected pit is not empty
-        if (getBoard().getPits().get(startPit).getStoneCount() == 0) {
-            return false; // The selected pit is empty
-        }
-
-        return true; // Valid move
-    }
-
     public boolean isGameOver(){                                        //checks if the game is over
         return board.isSideEmpty(0) || board.isSideEmpty(7);
         //return false;

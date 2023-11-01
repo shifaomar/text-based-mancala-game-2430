@@ -7,12 +7,14 @@ public class Player{
 
     public Player() {
         
-        theName = "DefaultPlayer"; 
+        //theName = "DefaultPlayer";
+        theName = null; 
         theStore = new Store(); 
     }
 
     public Player(String name){
-        this.theName = name;
+        //this.theName = name;
+        setName(name);
         theStore = new Store();
     }
 
@@ -25,13 +27,13 @@ public class Player{
         return theStore;
     }
 
-     public int getStoreIndex() {
+     /*public int getStoreIndex() {
         if (this.getName().equals("Player 1")) {
-            return 6;
+            return 0;
         } else {
-            return 14;
+            return 1;
         }
-    }
+    }*/
 
 //gets the count of the number of stones in the players store when they collect stones
     public int getStoreCount(){             
