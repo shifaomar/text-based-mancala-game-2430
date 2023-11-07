@@ -1,0 +1,203 @@
+
+
+********
+ Gradle Layout Check 
+********
+no readme
+
+
+********
+ Extra files found in repo 
+********
+vcs-1/gc.properties
+8.1.1/gc.properties
+executionHistory/executionHistory.lock
+executionHistory/executionHistory.bin
+fileChanges/last-build.bin
+dependencies-accessors/gc.properties
+dependencies-accessors/dependencies-accessors.lock
+checksums/checksums.lock
+fileHashes/fileHashes.lock
+fileHashes/fileHashes.bin
+fileHashes/resourceHashesCache.bin
+buildOutputCleanup/cache.properties
+buildOutputCleanup/outputFiles.bin
+buildOutputCleanup/buildOutputCleanup.lock
+ui/TextUI.class
+mancala/InvalidMoveException.class
+mancala/Board.class
+mancala/PitNotFoundException.class
+mancala/NoSuchPlayerException.class
+mancala/GameNotOverException.class
+mancala/Pit.class
+mancala/Store.class
+mancala/Player.class
+mancala/MancalaGame.class
+libs/ui.jar
+jar/MANIFEST.MF
+compileJava/previous-compilation-data.bin
+stash-dir/TextUI.class.uniqueId3
+stash-dir/Board.class.uniqueId1
+stash-dir/Player.class.uniqueId4
+stash-dir/Store.class.uniqueId2
+stash-dir/MancalaGame.class.uniqueId0
+checkstyle/main.html
+
+********
+ Missing mutators/accessors 
+********
+
+
+
+********
+ Non private member variables 
+********
+
+
+********
+ Missing Readme Headings 
+********
+Description
+Getting Started
+Limitations
+Author Information
+Development History
+Acknowledgments
+
+********
+ OO Effort for AI Solution 
+********
+110.00000000000001%
+
+********
+ Extra Files found in Docs folder 
+********
+
+gc.properties
+gc.properties
+executionHistory.lock
+executionHistory.bin
+last-build.bin
+gc.properties
+dependencies-accessors.lock
+checksums.lock
+fileHashes.lock
+fileHashes.bin
+resourceHashesCache.bin
+cache.properties
+outputFiles.bin
+buildOutputCleanup.lock
+TextUI.class
+InvalidMoveException.class
+Board.class
+PitNotFoundException.class
+NoSuchPlayerException.class
+GameNotOverException.class
+Pit.class
+Store.class
+Player.class
+MancalaGame.class
+ui.jar
+MANIFEST.MF
+previous-compilation-data.bin
+TextUI.class.uniqueId3
+Board.class.uniqueId1
+Player.class.uniqueId4
+Store.class.uniqueId2
+MancalaGame.class.uniqueId0
+main.xml
+main.html
+
+********
+ Build Check on repo as submitted 
+********
+[ant:checkstyle] [ERROR] /Users/judi/Desktop/repositories/autograder-GP2/temp/ssheik08/src/main/java/ui/TextUI.java:16:5: Method main length is 51 lines (max allowed is 50). [MethodLength]
+
+> Task :clean UP-TO-DATE
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test NO-SOURCE
+> Task :checkstyleTest
+
+> Task :checkstyleMain
+Checkstyle rule violations were found. See the report at: file:///Users/judi/Desktop/repositories/autograder-GP2/temp/ssheik08/build/reports/checkstyle/main.html
+Checkstyle files with violations: 1
+Checkstyle violations by severity: [error:1]
+
+
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 2s
+6 actionable tasks: 5 executed, 1 up-to-date
+
+
+********
+ Test Coverage for BoardTest 
+********
+Error running Junit test, no coverage metrics available
+
+********
+ Checkstyle Errors and Warnings 
+********
+Starting audit...
+[ERROR] /Users/judi/Desktop/repositories/autograder-GP2/temp/ssheik08/src/main/java/ui/TextUI.java:16:5: Method main length is 51 lines (max allowed is 50). [MethodLength]
+Audit done.
+
+
+********
+ Junit Test Results 
+********
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test FAILED
+
+BoardTest > testSetUpPitsAndGetPits() FAILED
+    org.opentest4j.AssertionFailedError at BoardTest.java:35
+
+BoardTest > testMoveStonesCaptureStones() FAILED
+    org.opentest4j.AssertionFailedError at BoardTest.java:97
+
+BoardTest > testSetUpStoresAndGetStores() FAILED
+    org.opentest4j.AssertionFailedError at BoardTest.java:41
+
+BoardTest > testMoveStonesValidMove() FAILED
+    org.opentest4j.AssertionFailedError at BoardTest.java:56
+
+MancalaGameTest > testGetStoreCountInvalidPlayer() FAILED
+    org.opentest4j.AssertionFailedError at MancalaGameTest.java:92
+
+MancalaGameTest > testGetWinnerGameNotOver() FAILED
+    org.opentest4j.AssertionFailedError at MancalaGameTest.java:133
+
+MancalaGameTest > testGetNumStonesInvalidPit() FAILED
+    org.opentest4j.AssertionFailedError at MancalaGameTest.java:66
+3 actionable tasks: 3 executed
+
+Failed to map supported failure 'org.opentest4j.AssertionFailedError: Expected mancala.NoSuchPlayerException to be thrown, but nothing was thrown.' with mapper 'org.gradle.api.internal.tasks.testing.failure.mappers.OpenTestAssertionFailedMapper@3aacf32a': Cannot invoke "Object.getClass()" because "obj" is null
+Failed to map supported failure 'org.opentest4j.AssertionFailedError: Expected mancala.GameNotOverException to be thrown, but nothing was thrown.' with mapper 'org.gradle.api.internal.tasks.testing.failure.mappers.OpenTestAssertionFailedMapper@3aacf32a': Cannot invoke "Object.getClass()" because "obj" is null
+Failed to map supported failure 'org.opentest4j.AssertionFailedError: Expected mancala.PitNotFoundException to be thrown, but nothing was thrown.' with mapper 'org.gradle.api.internal.tasks.testing.failure.mappers.OpenTestAssertionFailedMapper@3aacf32a': Cannot invoke "Object.getClass()" because "obj" is null
+
+24 tests completed, 7 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/judi/Desktop/repositories/autograder-GP2/temp/ssheik08/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 1s
