@@ -139,9 +139,9 @@ BUILD SUCCESSFUL in 2s
 
 
 ********
- Test Coverage for BoardTest 
+ How well you tested Board Class with BoardTest 
 ********
-Error running Junit test, no coverage metrics available
+Error running JUnit test, no coverage metrics available
 
 ********
  Checkstyle Errors and Warnings 
@@ -200,4 +200,4 @@ Execution failed for task ':test'.
 * Try:
 > Run with --scan to get full insights.
 
-BUILD FAILED in 1s
+BUILD FAILED in 999ms
