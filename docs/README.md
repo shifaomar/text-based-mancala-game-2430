@@ -20,7 +20,7 @@ text-based version of the game mancala
 ## Limitations
 
 What isn't done? What things cause errors?  
-junit tests and when running i get NullPointerException
+junit tests and the logic isnt correct
 ## Author Information
 
 Your name and contact information including your email address

@@ -6,13 +6,13 @@ public class Player {
     private Store store;
 
     public Player() {
-        name = "Player";
-        store = new Store();
+        this.name = "Player";
+        this.store = new Store();
     }
 
     public Player(String name) {
         this.name = name;
-        store = new Store();
+        this.store = new Store();
     }
 
     public String getName() {

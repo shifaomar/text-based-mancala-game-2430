@@ -1,12 +1,10 @@
-
-
 package mancala;
 
 public class Pit {
     private int stoneCount;
 
     public Pit() {
-        stoneCount = 4; // Initialize with 4 stones
+        stoneCount = 0;
     }
 
     public void addStone() {
@@ -25,6 +23,8 @@ public class Pit {
 
     @Override
     public String toString() {
-        return Integer.toString(stoneCount);
+        return "Pit{" +
+                "stoneCount=" + stoneCount +
+                '}';
     }
 }

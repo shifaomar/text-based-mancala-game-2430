@@ -14,9 +14,9 @@ public class Store {
     }
 
     public int emptyStore() {
-        int stonesInStore = totalStones;
+        int stones = totalStones;
         totalStones = 0;
-        return stonesInStore;
+        return stones;
     }
 
     public Player getOwner() {
@@ -33,6 +33,9 @@ public class Store {
 
     @Override
     public String toString() {
-        return Integer.toString(totalStones);
+        return "Store{" +
+                "owner=" + owner +
+                ", totalStones=" + totalStones +
+                '}';
     }
 }
