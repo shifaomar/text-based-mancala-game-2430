@@ -1,56 +1,42 @@
 package mancala;
 
-public class Player{
-
+public class Player {
     private String theName;
     private Store theStore;
 
     public Player() {
-        
-        //theName = "DefaultPlayer";
-        theName = null; 
-        theStore = new Store(); 
+        this.theName = new String();
+        this.theStore = new Store();
     }
 
-    public Player(String name){
-        //this.theName = name;
-        setName(name);
-        theStore = new Store();
+    public Player(String name) {
+        this.theName = name;
+        this.theStore = new Store();
     }
 
-    public String getName(){                   //gets the name of the player
-        
+    public String getName() {               //Gets the name of the player.
         return theName;
     }
 
-    public Store getStore(){                   //gets the players store when they collect stones
+    public Store getStore() {               //Gets the player's store where they collect stones.
         return theStore;
     }
 
-     /*public int getStoreIndex() {
-        if (this.getName().equals("Player 1")) {
-            return 0;
-        } else {
-            return 1;
-        }
-    }*/
-
-//gets the count of the number of stones in the players store when they collect stones
-    public int getStoreCount(){             
+    //Gets the count of the number of stones in the player's store where they collect stones.
+    public int getStoreCount() {         
         return theStore.getTotalStones();
     }
 
-    public void setName(String name){           //sets the players name
+    public void setName(String name) {      //Sets the player's name.
         this.theName = name;
     }
-    
-    public void setStore(Store store){          //sets the players store
+
+    public void setStore(Store store) {     //Sets the player's store.
         this.theStore = store;
     }
 
     @Override
-    public String toString(){
-            return theName;
+    public String toString() {
+        return "Player = " + theName;
     }
-
 }
